@@ -4,7 +4,7 @@
 #
 Name     : pypi-pytest_runner
 Version  : 5.3.1
-Release  : 70
+Release  : 71
 URL      : https://files.pythonhosted.org/packages/2a/04/c3223812b3427ffa95110c5781eae7fe8bc3e9e1fe4e2328bee17b9e5820/pytest-runner-5.3.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/2a/04/c3223812b3427ffa95110c5781eae7fe8bc3e9e1fe4e2328bee17b9e5820/pytest-runner-5.3.1.tar.gz
 Summary  : Invoke py.test as distutils command with dependency resolution
@@ -14,18 +14,14 @@ Requires: pypi-pytest_runner-license = %{version}-%{release}
 Requires: pypi-pytest_runner-python = %{version}-%{release}
 Requires: pypi-pytest_runner-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: pytest-runner
-Provides: pytest-runner-python
-Provides: pytest-runner-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
+BuildRequires : pypi(py)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
 BuildRequires : pypi(wheel)
-BuildRequires : pytest
-BuildRequires : setuptools_scm
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 .. image:: https://img.shields.io/pypi/v/pytest-runner.svg
@@ -67,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641481998
+export SOURCE_DATE_EPOCH=1642463510
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
