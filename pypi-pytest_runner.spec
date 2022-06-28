@@ -4,7 +4,7 @@
 #
 Name     : pypi-pytest_runner
 Version  : 6.0.0
-Release  : 73
+Release  : 74
 URL      : https://files.pythonhosted.org/packages/2b/b2/5a07a37f314d3c0457c5431fd5b130e04355fa143f042356f77dd1570d36/pytest-runner-6.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/2b/b2/5a07a37f314d3c0457c5431fd5b130e04355fa143f042356f77dd1570d36/pytest-runner-6.0.0.tar.gz
 Summary  : Invoke py.test as distutils command with dependency resolution
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656381001
+export SOURCE_DATE_EPOCH=1656401226
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
